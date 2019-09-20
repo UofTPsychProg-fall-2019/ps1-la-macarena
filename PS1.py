@@ -4,6 +4,8 @@
 Problem Set 1
 @author: katherineduncan
 """
+#Team La Macarena
+#Youval Aberman, Will Staples, and Emily Schwartzman
 
 #%% Part 1: pass the error forward ____________________________________________
 # this should be completed one at a time to get practice using GitHub
@@ -15,9 +17,12 @@ Problem Set 1
 # after competign both steps, commit and push your changes to GitHub
 coder1 = 'hello world! python line " + 1 
 print(coder1)
+#corrected version (Emily):
+coder1 = 'hello world! python line ' + str(1)
+print(coder1)
 
 # second group member's error to fix
-coder2 =
+coder2 = 2.0 + '1'
 
 # now the second group member should define a variable with an error
 # and then commit and push changes to GitHub
@@ -34,10 +39,10 @@ rt = [400, 450, 500, 440, -1, 410, 570]
 
 # the -1 indicates missing data. Your job is to remove it
 # use the index method to find the missing value 
-missing_rt =
+missing_rt =rt.index(-1)
 
 # and then use missing_rt to remove the trial from rt
-clean_rt =
+clean_rt =rt.remove(rt[missing_rt])
 
 
 # now you have data with more than one missing value
