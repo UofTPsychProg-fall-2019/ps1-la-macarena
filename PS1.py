@@ -5,7 +5,7 @@ Problem Set 1
 @author: katherineduncan
 """
 #Team La Macarena
-#Youval Aberman, Will Staples, and Emily Schwartzman
+#Youval Aberman, Will Staples, Emily Schwartzman, and Georgia Hadjis
 
 #%% Part 1: pass the error forward ____________________________________________
 # this should be completed one at a time to get practice using GitHub
