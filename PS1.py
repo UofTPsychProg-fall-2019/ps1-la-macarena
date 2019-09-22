@@ -25,12 +25,12 @@ print(coder1)
 coder2 = 2.0 + '1'
 print(coder2)
 #corrected version (Georgia):
-coder2 = 2.0 + str(1)
+coder2 = 2.0 + float(1)
 print(coder2)
 
 # now the second group member should define a variable with an error
 # and then commit and push changes to GitHub
-coder3 = TRUE + 1.
+coder3 = TRUE + 1.0
 print(coder3)
 
 #%%  Part 2  find and remove the invalid response______________________________
