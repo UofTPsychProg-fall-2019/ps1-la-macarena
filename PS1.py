@@ -23,14 +23,15 @@ print(coder1)
 
 # second group member's error to fix
 coder2 = 2.0 + '1'
+print(coder2)
+#corrected version (Georgia):
+coder2 = 2.0 + str(1)
+print(coder2)
 
 # now the second group member should define a variable with an error
 # and then commit and push changes to GitHub
-coder3 =
-
-# etc. until all group members have fixed and made 1 error
-
-
+coder3 = TRUE + 1.
+print(coder3)
 
 #%%  Part 2  find and remove the invalid response______________________________
 
