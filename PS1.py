@@ -12,10 +12,9 @@ Problem Set 1
 
 
 # there's an error in the definition of x below
-# first group member (coder 1), your job is to first correct it 
 # and make a new variable with an error for the next group member to fix
 # after competign both steps, commit and push your changes to GitHub
-coder1 = 'hello world! python line " + 1 
+coder1 = 'hello world! python line " + 1
 print(coder1)
 #corrected version (Emily):
 coder1 = 'hello world! python line ' + str(1)
@@ -32,14 +31,17 @@ print(coder2)
 # and then commit and push changes to GitHub
 coder3 = TRUE + 1.0
 print(coder3)
+#corrected version (Youval):
+coder3 = TRUE + bool(1.0)
+print(coder3) #will print 2, because TRUE is equal to 1.
 
 #%%  Part 2  find and remove the invalid response______________________________
 
-# imagine these are a list of reaction times that you recorded 
+# imagine these are a list of reaction times that you recorded
 rt = [400, 450, 500, 440, -1, 410, 570]
 
 # the -1 indicates missing data. Your job is to remove it
-# use the index method to find the missing value 
+# use the index method to find the missing value
 missing_rt =rt.index(-1)
 
 # and then use missing_rt to remove the trial from rt
@@ -49,15 +51,15 @@ clean_rt =rt.remove(rt[missing_rt])
 # now you have data with more than one missing value
 rt_trouble = [400, 450, 500, 440, -1, 410, 570, -1, 400]
 
-# try the same procedure. Does it work? 
+# try the same procedure. Does it work?
 # use a comment to explain why or why not below in comments
 
 
 
-# now write an if statement that you can use to remove the frist missing value 
-# only when there is a missing value (-1) in a list 
+# now write an if statement that you can use to remove the frist missing value
+# only when there is a missing value (-1) in a list
 # this statement should always generate a clean_rt list; if there's no missing
-# data clean_rt is set to the original rt list.   
+# data clean_rt is set to the original rt list.
 
 
 
@@ -70,7 +72,6 @@ data = [rt_new, trial_num, accuracy]
 # this master list combines information about each trial in an experiment,
 # where index 0 in each sublist refers to data from the first trial, etc.
 # using the same appraoches as above, find the trial with missing rt data
-# and remove it from all sublists in data 
-# be sure to only work with the master data list, to practice indexing 
+# and remove it from all sublists in data
+# be sure to only work with the master data list, to practice indexing
 # lists of lists
-
