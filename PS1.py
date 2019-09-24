@@ -52,6 +52,7 @@ rt_trouble = [400, 450, 500, 440, -1, 410, 570, -1, 400]
 # try the same procedure. Does it work? 
 # use a comment to explain why or why not below in comments
 
+# This does not work because "missing_rt_trouble" identifies -1 at position 4 and removes that in the following step. This does not account for -1 in position 7.
 
 
 # now write an if statement that you can use to remove the frist missing value 
@@ -59,7 +60,15 @@ rt_trouble = [400, 450, 500, 440, -1, 410, 570, -1, 400]
 # this statement should always generate a clean_rt list; if there's no missing
 # data clean_rt is set to the original rt list.   
 
+missing_rt_trouble = rt_trouble.index(-1)
 
+for x in rt_trouble:
+    if x == -1:
+        missing_rt_trouble = rt_trouble.index(-1)
+        del(rt_trouble[missing_rt_trouble])
+        clean_rt_trouble = rt_trouble
+else:
+    clean_rt_trouble = rt_trouble
 
 # for the last section, you will work with a list of lists:
 rt_new = [400, 450, 500, 440, -1, 410, 570]
@@ -73,4 +82,13 @@ data = [rt_new, trial_num, accuracy]
 # and remove it from all sublists in data 
 # be sure to only work with the master data list, to practice indexing 
 # lists of lists
+
+for x in rt_new:
+    if x == -1:
+        missing_rt_trouble = rt_new.index(-1)
+        del(rt_new[missing_rt_trouble])
+        del(trial_num[missing_rt_trouble])
+        clean_rt_new = rt_new
+else:
+    clean_rt_new = rt_new
 
