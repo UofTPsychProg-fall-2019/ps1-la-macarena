@@ -85,3 +85,17 @@ data = [rt_new, trial_num, accuracy]
 # and remove it from all sublists in data
 # be sure to only work with the master data list, to practice indexing
 # lists of lists
+
+for x in data[0]:
+    if x == -1:
+        missing_data=data[0].index(-1)
+        del(data[0][missing_data])
+        del(data[1][missing_data])
+        del(data[2][missing_data])
+        clean_data=data
+else:
+    clean_data=data
+
+
+    
+    
