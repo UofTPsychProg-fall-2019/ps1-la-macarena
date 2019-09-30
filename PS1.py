@@ -35,7 +35,7 @@ print(coder3)
 #corrected version (Youval):
 coder3 = TRUE + bool(1.0)
 print(coder3) #will print 2, because TRUE is equal to 1.
-
+coder3 = 2
 #%%  Part 2  find and remove the invalid response______________________________
 
 # imagine these are a list of reaction times that you recorded
