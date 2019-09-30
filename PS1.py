@@ -25,7 +25,7 @@ print(coder1)
 coder2 = 2.0 + '1'
 print(coder2)
 #corrected version (Georgia):
-coder2 = 2.0 + float(1)
+coder2 = 2.0 + int(1)
 print(coder2)
 
 # now the second group member should define a variable with an error
