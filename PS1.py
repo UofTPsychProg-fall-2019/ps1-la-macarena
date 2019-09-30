@@ -91,11 +91,8 @@ for x in data[0]:
         missing_data=data[0].index(-1)
         del(data[0][missing_data])
         del(data[1][missing_data])
-        del(data[2][missing_data])
+        # problem is that accuracy (indexed as data[2] only has 6 items, so I believe the "remove it from all sublists" instruction was false)
+        # del(data[2][missing_data])
         clean_data=data
 else:
     clean_data=data
-
-
-    
-    
